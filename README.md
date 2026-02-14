@@ -4,7 +4,7 @@ Code and data-processing workflows supporting the manuscript:
 “Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome”.
 
 ## Overview
-This repository contains the complete analysis framework used to characterize multi‑omic signatures across clinical conditions in individuals with Down syndrome (DS).  
+This repository contains the complete analysis framework used to characterize multi‑omic signatures across co-occurring conditions in [Human Trisome Project](https://www.trisome.org/) participants with and without Down syndrome (DS).  
 It includes:
 
 * R scripts and functions
