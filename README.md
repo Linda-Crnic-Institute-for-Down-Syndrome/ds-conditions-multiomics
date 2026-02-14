@@ -62,13 +62,13 @@ The renv.lock files provide exact versions.
    ``` 
 2. Change to desired R Project directory and open R project via `.Rproj` file.
 3. Set up reproducible R environment (requires `renv` package to be installed).  
-   a. Restore the R environment.  
+   Option A. Restore the R environment.  
    This will install the exact versions of all R packages but requires matching R version.
    ```
    install.packages("renv")
    renv::restore()
    ```
-   b. Initialize the R environment.  
+   Option B. Initialize the R environment.  
    This will install all R packages but will not ensure identical versions.
    ```
    install.packages("renv")
