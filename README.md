@@ -1,7 +1,7 @@
 # Multi‑omic Analysis of Co-occurring Conditions in Down Syndrome
 
-Code and data-processing workflows supporting the manuscript:
-“Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome”
+Code and data-processing workflows supporting the manuscript:  
+“Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome”.
 
 ## Overview
 This repository contains the complete analysis framework used to characterize multi‑omic signatures across clinical conditions in individuals with Down syndrome (DS).  
@@ -29,23 +29,21 @@ ds-conditions-multiomics/
 │    ├── rdata/                  # Workspace images RDS objects
 │    ├── renv.lock               # R package versions for reproducibility
 │    └── README.md
-├── .zenodo.json           # Metadata for DOI registration (optional)
+├── .zenodo.json           # Metadata for DOI registration
 ├── LICENSE.md             # Software license
-└── README.md
+└── README.md              # This README file
 ```
 
-## Data Availability
-Input datasets used in this study can be obtained from the associated Synapse repository:
-* [Sample metadata](URL)
-* [Co-occurring conditions](URL)
-* [MSD](URL)
-* [SOMAscan](URL)
-
+## Data Availability (UPDATE)
+Human Trisome Project (HTP) datasets used in this study can be obtained from the associated Synapse repository:
+* [Sample metadata and Co-occurring conditions](https://doi.org/10.7303/syn31488784)
+* [Whole-blood bulk RNA-seq](https://doi.org/10.7303/syn31488780)
+* [SOMAscan plasma proteomics](https://doi.org/10.7303/syn31488781)
+* [LC-MS metabolomics](https://doi.org/10.7303/syn31488782)
+* [MSD plasma immune markers](https://doi.org/10.7303/syn31475487)
 Download each dataset to the appropriate `/data/` directories within each R project.  
 
-Alternatively, datasets can be obtained via the [INCLUDE Data Hub](URL):  
-DOI   
-DOI   
+Alternatively, the HTP datasets can be obtained via the [INCLUDE Data Hub](https://doi.org/10.71738/p0a9-2v09) and the whole blood RNA-seq data are also available in Gene Expression Omnibus: [GSE190125](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190125).  
 
 ## Software & Dependencies
 Key packages include:
