@@ -1,0 +1,26 @@
+
+{
+  "title": "Multi‑omic Analysis of Co-occurring Conditions in Down Syndrome",
+  "description": "Code and data-processing workflows supporting the manuscript: “Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome”.",
+  "creators": [
+    {
+      "name": "Galbraith, Matthew D.",
+      "affiliation": "Linda Crnic Institute for Down Syndrome, University of Colorado Anschutz",
+      "orcid": "0000-0003-0485-3927"
+    },
+    {
+      "name": "Espinosa, Joaquin M.",
+      "affiliation": "Linda Crnic Institute for Down Syndrome, University of Colorado Anschutz",
+      "orcid": "0000-0001-9048-1941"
+    }
+  ],
+  "keywords": ["R", "bioinformatics", "reproducible research", "Down Syndrome"],
+  "license": "MIT",
+  "upload_type": "software",
+  "funding": [
+    {
+      "agency": "NIH",
+      "grant_number": "R01AI150305, 5UL1TR002535-02S1, U24AG092191, P30CA046934"
+    }
+  ]
+}
