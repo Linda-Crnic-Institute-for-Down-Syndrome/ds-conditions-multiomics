@@ -29,7 +29,7 @@ ds-conditions-multiomics/
 │    ├── rdata/                  # Workspace images RDS objects
 │    ├── renv.lock               # R package versions for reproducibility
 │    └── README.md
-├── .zenodo.json           # Metadata for DOI registration
+├── .zenodo.json           # Metadata for Zenodo DOI registration
 ├── LICENSE.md             # Software license
 └── README.md              # This README file
 ```
@@ -62,7 +62,7 @@ The renv.lock files provide exact versions.
    ``` 
 2. Change to desired R Project directory and open R project via `.Rproj` file.
 3. Set up reproducible R environment (requires `renv` package to be installed).  
-  
+
    Option A. Restore the R environment.  
    This will install the exact versions of all R packages but requires matching R version.
    ```
@@ -78,7 +78,7 @@ The renv.lock files provide exact versions.
 4. Follow workflow in analysis script.
 
 
-## Citation
+## Citation (UPDATE)
 If you use this code, please cite:  
 **Manuscript**
 Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome.
