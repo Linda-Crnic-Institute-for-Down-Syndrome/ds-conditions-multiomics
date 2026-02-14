@@ -1,10 +1,10 @@
-# Multi‑omic Analysis of Clinical Conditions in Down Syndrome
+# Multi‑omic Analysis of Co-occurring Conditions in Down Syndrome
 
 Code and data-processing workflows supporting the manuscript:
 “Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome”
 
 ## Overview
-This repository contains the complete analysis framework used to characterize multi‑omic signatures across clinical conditions in individuals with Down syndrome (DS).
+This repository contains the complete analysis framework used to characterize multi‑omic signatures across clinical conditions in individuals with Down syndrome (DS).  
 It includes:
 
 * R scripts and functions
@@ -17,6 +17,7 @@ Each analysis workflow is presented as a self-contained R Project. The goal is t
 
 ## Repository Structure
 
+```
 ds-conditions-multiomics/
 │
 ├── Analysis_1/            # Self-contained R Project directory for specific analysis workflow
@@ -31,6 +32,7 @@ ds-conditions-multiomics/
 ├── .zenodo.json           # Metadata for DOI registration (optional)
 ├── LICENSE.md             # Software license
 └── README.md
+```
 
 ## Data Availability
 Input datasets used in this study can be obtained from the associated Synapse repository:
@@ -38,24 +40,25 @@ Input datasets used in this study can be obtained from the associated Synapse re
 * [Co-occurring conditions](URL)
 * [MSD](URL)
 * [SOMAscan](URL)
-Download each dataset to the appropriate `/data/` directories within each R project.
 
-Alternatively, datasets can be obtained via the [INCLUDE Data Hub](URL):
+Download each dataset to the appropriate `/data/` directories within each R project.  
+
+Alternatively, datasets can be obtained via the [INCLUDE Data Hub](URL):  
 DOI   
 DOI   
 
 ## Software & Dependencies
 Key packages include:
-*tidyverse  
-*ggplot2  
+* renv
+* tidyverse  
+* ggplot2  
 The renv.lock files provide exact versions.
 
-
-## Installation/Environment Setup and Running Analyses
+## R Environment Setup and Running Analyses
 1. Clone the repository
-```
-git clone https://github.com/Linda-Crnic-Institute-for-Down-Syndrome/ds-conditions-multiomics.git
-``` 
+   ```
+   git clone https://github.com/Linda-Crnic-Institute-for-Down-Syndrome/ds-conditions-multiomics.git
+   ``` 
 2. Change to desired R Project directory and open R project via `.Rproj` file
 3. Set up reproducible R environment (requires `renv` package to be installed)
    a. Restore the R environment  
@@ -74,13 +77,12 @@ git clone https://github.com/Linda-Crnic-Institute-for-Down-Syndrome/ds-conditio
 
 
 ## Citation
-If you use this code, please cite:
-Manuscript
-
+If you use this code, please cite:  
+**Manuscript**
 Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome.
 Authors, Journal, Year. DOI (insert once available)
 
-Code
+**Code**
 ZENODO DOI BADGE GOES HERE
 
 ## License
