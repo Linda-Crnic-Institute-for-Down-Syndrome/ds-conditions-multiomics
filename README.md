@@ -52,22 +52,23 @@ Key packages include:
 * renv
 * tidyverse  
 * ggplot2  
+
 The renv.lock files provide exact versions.
 
 ## R Environment Setup and Running Analyses
-1. Clone the repository
+1. Clone the repository.
    ```
    git clone https://github.com/Linda-Crnic-Institute-for-Down-Syndrome/ds-conditions-multiomics.git
    ``` 
-2. Change to desired R Project directory and open R project via `.Rproj` file
-3. Set up reproducible R environment (requires `renv` package to be installed)
-   a. Restore the R environment  
+2. Change to desired R Project directory and open R project via `.Rproj` file.
+3. Set up reproducible R environment (requires `renv` package to be installed).  
+   a. Restore the R environment.  
    This will install the exact versions of all R packages but requires matching R version.
    ```
    install.packages("renv")
    renv::restore()
    ```
-   b. Initialize the R environment  
+   b. Initialize the R environment.  
    This will install all R packages but will not ensure identical versions.
    ```
    install.packages("renv")
