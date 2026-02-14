@@ -40,7 +40,9 @@ Human Trisome Project (HTP) datasets used in this study can be obtained from the
 * [Whole-blood bulk RNA-seq](https://doi.org/10.7303/syn31488780)
 * [SOMAscan plasma proteomics](https://doi.org/10.7303/syn31488781)
 * [LC-MS metabolomics](https://doi.org/10.7303/syn31488782)
-* [MSD plasma immune markers](https://doi.org/10.7303/syn31475487)
+* [MSD plasma immune markers](https://doi.org/10.7303/syn31475487)  
+* [Mass cytometry](UPDATE)  
+
 Download each dataset to the appropriate `/data/` directories within each R project.  
 
 Alternatively, the HTP datasets can be obtained via the [INCLUDE Data Hub](https://doi.org/10.71738/p0a9-2v09) and the whole blood RNA-seq data are also available in Gene Expression Omnibus: [GSE190125](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE190125).  
