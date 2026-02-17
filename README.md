@@ -15,6 +15,7 @@ It includes:
 
 Each analysis workflow is presented as a self-contained R Project. The goal is to provide a fully reproducible, transparent workflow consistent with open‑science practices.  
 
+
 ## Repository Structure
 
 ```
@@ -33,6 +34,17 @@ ds-conditions-multiomics/
 ├── LICENSE.md             # Software license
 └── README.md              # This README file
 ```
+
+## Analysis Naming Conventions
+Script names indicate the comparison being performed:
+* **`<Dataset>_T21_cases_vs_controls`**
+  Analysis restricted to individuals with Down syndrome (T21), comparing cases and controls for each condition within a dataset.
+* **`<Dataset>_T21_cases_vs_D21`**
+  Analysis comparing individuals without Down syndrome (D21) to T21 cases for each co-occurring condition within a dataset.
+* **`<Dataset>_T21_controls_vs_D21`**
+  Analysis comparing individuals without Down syndrome (D21) to T21 controls for each co-occurring condition within a dataset.
+* **`<Dataset>_<T21/D21>_BMI`**
+	Analysis of BMI vs. dataset features in individuals with (T21) or without (D21) Down syndrome.
 
 ## Data Availability (UPDATE)
 Human Trisome Project (HTP) datasets used in this study can be obtained from the associated Synapse repository:
