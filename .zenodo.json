@@ -4,6 +4,21 @@
   "description": "Code and data-processing workflows supporting the manuscript: “Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome”.",
   "creators": [
     {
+      "name": "Donovan, Micah D.",
+      "affiliation": "Linda Crnic Institute for Down Syndrome, University of Colorado Anschutz",
+      "orcid": ""
+    },
+    {
+      "name": "Chillamcherla, Srija",
+      "affiliation": "Linda Crnic Institute for Down Syndrome, University of Colorado Anschutz",
+      "orcid": ""
+    },
+    {
+      "name": "Sundararajan, Zenitha",
+      "affiliation": "Linda Crnic Institute for Down Syndrome, University of Colorado Anschutz",
+      "orcid": ""
+    },
+    {
       "name": "Galbraith, Matthew D.",
       "affiliation": "Linda Crnic Institute for Down Syndrome, University of Colorado Anschutz",
       "orcid": "0000-0003-0485-3927"
@@ -14,7 +29,7 @@
       "orcid": "0000-0001-9048-1941"
     }
   ],
-  "keywords": ["R", "bioinformatics", "reproducible research", "Down Syndrome"],
+  "keywords": ["R", "bioinformatics", "Down Syndrome, trisomy 21, multiomics, transcriptomics, metabolomics, proteomics, co-occurring conditions"],
   "license": "MIT",
   "upload_type": "software",
   "funding": [
