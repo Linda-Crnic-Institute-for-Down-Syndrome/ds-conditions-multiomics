@@ -27,9 +27,9 @@ ds-conditions-multiomics/
 │    ├── data/                   # Raw or external data
 │    ├── results/                # Resulting tables, processed data, model outputs
 │    ├── figures/                # Generated visualizations and plots
-│    ├── rdata/                  # Workspace images RDS objects
+│    ├── rdata/                  # Workspace images and RDS objects
 │    ├── renv.lock               # R package versions for reproducibility
-│    └── README.md
+│    └── README.md               # Analysis-specific README
 ├── .zenodo.json           # Metadata for Zenodo DOI registration
 ├── LICENSE.md             # Software license
 └── README.md              # This README file
