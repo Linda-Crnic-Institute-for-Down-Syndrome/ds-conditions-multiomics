@@ -46,14 +46,14 @@ Script names indicate the comparison being performed:
 * **`<Dataset>_<T21/D21>_BMI`**
 	Analysis of BMI vs. dataset features in individuals with (T21) or without (D21) Down syndrome.
 
-## Data Availability (UPDATE)
+## Data Availability
 Human Trisome Project (HTP) datasets used in this study can be obtained from the associated Synapse repository:
 * [Sample metadata and Co-occurring conditions](https://doi.org/10.7303/syn31488784)
 * [Whole-blood bulk RNA-seq](https://doi.org/10.7303/syn31488780)
 * [SOMAscan plasma proteomics](https://doi.org/10.7303/syn31488781)
 * [LC-MS metabolomics](https://doi.org/10.7303/syn31488782)
 * [MSD plasma immune markers](https://doi.org/10.7303/syn31475487)  
-* [Mass cytometry](UPDATE)  
+* [Mass cytometry](UPDATE) (UPDATE)  
 
 Download each dataset to the appropriate `/data/` directories within each R project.  
 
