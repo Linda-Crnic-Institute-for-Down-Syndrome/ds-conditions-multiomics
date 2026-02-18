@@ -1,4 +1,4 @@
-# Linear modeling of MSD plasma cytokines across co-occurring conditions
+# Linear modeling of MSD plasma cytokines across co-occurring conditions: T21 cases vs. controls
 
 ## Overview  
 
@@ -12,15 +12,15 @@ Please refer to the top-level `README.md` in the `ds-conditions-multiomics/` rep
 
 ## Repository contents  
 ```         
-Analysis_1/ 
-  ├── Analysis_1.R            # Main analysis script 
-  ├── helper_functions.R      # Custom R functions used in analysis 
-  ├── data/                   # Input datasets (not included in repository) 
-  ├── results/                # Model outputs and summary tables 
-  ├── plots/                  # Generated plots 
-  ├── rdata                   # Workspace images RDS objects 
-  ├── renv.lock               # Reproducible package versions 
-  └── README.md               # This README file
+MSD_T21_cases_vs_controls/ 
+  ├── MSD_T21_cases_vs_controls_lm.R    # Main analysis script 
+  ├── helper_functions.R                # Custom R functions used in analysis 
+  ├── data/                             # Input datasets (not included in repository) 
+  ├── results/                          # Model outputs and summary tables 
+  ├── plots/                            # Generated plots 
+  ├── rdata                             # Workspace images RDS objects 
+  ├── renv.lock                         # Reproducible package versions 
+  └── README.md                         # This README file
 ```
 
 ------------------------------------------------------------------------
