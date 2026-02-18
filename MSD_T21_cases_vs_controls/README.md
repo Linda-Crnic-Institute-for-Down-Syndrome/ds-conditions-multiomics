@@ -48,8 +48,8 @@ Exact versions of all R packages can be found in the renv.lock file.
 
 Human Trisome Project (HTP) datasets used in this study can be obtained from the associated Synapse repository:
 
-\* [Sample metadata and co-occurring conditions](https://doi.org/10.7303/syn3148878)\
-\* [MSD plasma immune markers](https://doi.org/10.7303/syn31475487)\
+* [Sample metadata and co-occurring conditions](https://doi.org/10.7303/syn3148878)
+* [MSD plasma immune markers](https://doi.org/10.7303/syn31475487)
 
 These datasets originate from the [Human Trisome Project](https://www.trisome.org/).  
 
