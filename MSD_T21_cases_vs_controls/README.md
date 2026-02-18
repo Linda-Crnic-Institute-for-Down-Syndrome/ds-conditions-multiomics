@@ -1,10 +1,10 @@
 # Linear modeling of MSD plasma cytokines across co-occurring conditions
 
--   [Overview]
--   [Repository contents]
--   [System Requirements]
--   [Data sources]
--   [R Environment Setup and Running Analyses]
+-   [Overview](#overview)
+-   [Repository Contents](#repository-contents)
+-   [System Requirements](#system-requirements)
+-   [Data Sources](#data-sources)
+-   [R Environment Setup and Running Analyses](#r-environment-setup-and-running-analyses)
 
 ## Overview
 
@@ -16,7 +16,7 @@ Please refer to the top-level `README.md` in the `ds-conditions-multiomics/` rep
 
 ------------------------------------------------------------------------
 
-## Repository contents
+## Repository Contents
 
 ```         
 Analysis_1/ 
