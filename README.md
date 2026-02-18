@@ -103,7 +103,7 @@ If you use this code, please cite:
 Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome.
 Authors, Journal, Year. DOI (UPDATE once available)
 
-**Code**
-https://zenodo.org/badge/DOI/10.5281/zenodo.18684744.svg
+**Code**  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18684744.svg)](https://doi.org/10.5281/zenodo.18684744)
 
 This project is licensed under the MIT License – see the LICENSE file for details.
