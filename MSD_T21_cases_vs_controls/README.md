@@ -38,7 +38,7 @@ The R packages used in this analysis can be run on any standard computer with en
 
 This analysis was originally run on a system with 36 GB RAM running MacOS 14.1 and R version 4.3.2.  
 
-The `renv` package can be used to manage the R environment.  
+The `renv` package can be used to replicate and manage the R environment.  
 
 Exact versions of all R packages can be found in the renv.lock file.
 
