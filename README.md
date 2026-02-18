@@ -104,6 +104,6 @@ Systematic multi‑omic deconvolution of the clinical heterogeneity of Down synd
 Authors, Journal, Year. DOI (UPDATE once available)
 
 **Code**
-https://doi.org/10.5281/zenodo.18684744
+https://zenodo.org/badge/DOI/10.5281/zenodo.18684744.svg
 
 This project is licensed under the MIT License – see the LICENSE file for details.
