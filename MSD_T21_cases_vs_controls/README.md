@@ -1,11 +1,5 @@
 # Linear modeling of MSD plasma cytokines across co-occurring conditions
 
--   [Overview](#overview)
--   [Repository Contents](#repository-contents)
--   [System Requirements](#system-requirements)
--   [Data Sources](#data-sources)
--   [R Environment Setup and Running Analyses](#r-environment-setup-and-running-analyses)
-
 ## Overview
 
 This analysis project is part of the “Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome” manuscript
