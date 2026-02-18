@@ -4,11 +4,12 @@ Code and data-processing workflows supporting the manuscript:
 “Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome”.
 
 ## Overview
--   [Repository Structure](#repository-structure)
--   [Analysis Naming Conventions](#analysis-naming-conventions)
--   [Data Sources](#data-sources)
--   [Software & Dependencies](#software-dependencies)
--   [R Environment Setup and Running Analyses](#r-environment-setup-and-running-analyses)
+* [Repository Structure](#repository-structure)
+* [Analysis Naming Conventions](#analysis-naming-conventions)
+* [Data Sources](#data-sources)
+* [Software & Dependencies](#software--dependencies)
+* [R Environment Setup and Running Analyses](#r-environment-setup-and-running-analyses)
+* [Citation](#citation--license)
 
 This repository contains the complete analysis framework used to characterize multi‑omic signatures across co-occurring conditions in [Human Trisome Project](https://www.trisome.org/) participants with and without Down syndrome (DS).  
 It includes:
@@ -96,14 +97,13 @@ The renv.lock files provide exact versions.
 4. Follow workflow in analysis script.
 
 
-## Citation (UPDATE)
+## Citation & License
 If you use this code, please cite:  
 **Manuscript**
 Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome.
-Authors, Journal, Year. DOI (insert once available)
+Authors, Journal, Year. DOI (UPDATE once available)
 
 **Code**
 ZENODO DOI BADGE GOES HERE
 
-## License
 This project is licensed under the MIT License – see the LICENSE file for details.
