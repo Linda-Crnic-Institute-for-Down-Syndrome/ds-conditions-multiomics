@@ -29,7 +29,7 @@
       "orcid": "0000-0001-9048-1941"
     }
   ],
-  "keywords": ["R", "bioinformatics", "Down Syndrome", "trisomy 21", "multiomics", "transcriptomics", "metabolomics", "proteomics", "co-occurring conditions"],
+  "keywords": ["R", "bioinformatics", "Down syndrome", "trisomy 21", "multiomics", "transcriptomics", "metabolomics", "proteomics", "co-occurring conditions"],
   "license": "MIT",
   "upload_type": "software",
   "funding": [
