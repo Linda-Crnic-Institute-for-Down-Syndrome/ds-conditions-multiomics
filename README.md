@@ -72,7 +72,7 @@ Key packages include:
 * tidyverse  
 * ggplot2  
 
-The renv.lock files provide exact versions.
+The renv.lock files within each analysis project directory provide exact package versions.
 
 ## R Environment Setup and Running Analyses
 1. Clone the repository.
