@@ -1,6 +1,6 @@
 # Linear modeling of MSD plasma cytokines across co-occurring conditions
 
-## Overview
+## Overview  
 
 This analysis project is part of the “Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome” manuscript
 
@@ -10,8 +10,7 @@ Please refer to the top-level `README.md` in the `ds-conditions-multiomics/` rep
 
 ------------------------------------------------------------------------
 
-## Repository Contents
-
+## Repository contents  
 ```         
 Analysis_1/ 
   ├── Analysis_1.R            # Main analysis script 
@@ -26,26 +25,26 @@ Analysis_1/
 
 ------------------------------------------------------------------------
 
-## System Requirements
+## System Requirements 
 
-The R packages used in this analysis can be run on any standard computer with enough RAM to support the operations.  
+The R packages used in this analysis can be run on any standard computer with enough RAM to support the operations.
 
-This analysis was originally run on a system with 36 GB RAM running MacOS 14.1 and R version 4.3.2.  
+This analysis was originally run on a system with 36 GB RAM running MacOS 14.1 and R version 4.3.2.
 
-The `renv` package can be used to replicate and manage the R environment.  
+The `renv` package can be used to manage the R environment.
 
 Exact versions of all R packages can be found in the renv.lock file.
 
 ------------------------------------------------------------------------
 
-## Data Sources
+## Data Sources 
 
 Human Trisome Project (HTP) datasets used in this study can be obtained from the associated Synapse repository:
 
 * [Sample metadata and co-occurring conditions](https://doi.org/10.7303/syn3148878)
 * [MSD plasma immune markers](https://doi.org/10.7303/syn31475487)
 
-These datasets originate from the [Human Trisome Project](https://www.trisome.org/).  
+These datasets originate from the [Human Trisome Project](https://www.trisome.org/).
 
 Download the required files and place them in the `data/` directory before running the analysis.
 
@@ -53,7 +52,7 @@ No pre-processing beyond what is described in the manuscript is required prior t
 
 ------------------------------------------------------------------------
 
-## R Environment Setup and Running Analyses
+## R Environment Setup and Running Analyses  
 
 1.  Clone the repository.
 
@@ -88,5 +87,4 @@ The `helper_functions.R` script contains project-specific functions used through
 -   Custom ggplot theme setup for consistent figure formatting
 -   Functions to visualize results in the form of a volcano plots
 
-These functions are customized for this project and require no modification for standard execution of the workflow.  
-
+These functions are customized for this project and require no modification for standard execution of the workflow.
