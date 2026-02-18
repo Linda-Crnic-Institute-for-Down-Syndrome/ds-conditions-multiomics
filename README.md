@@ -4,6 +4,12 @@ Code and data-processing workflows supporting the manuscript:
 “Systematic multi‑omic deconvolution of the clinical heterogeneity of Down syndrome”.
 
 ## Overview
+-   [Repository Structure](#repository-structure)
+-   [Analysis Naming Conventions](#analysis-naming-conventions)
+-   [Data Sources](#data-sources)
+-   [Software & Dependencies](#software-dependencies)
+-   [R Environment Setup and Running Analyses](#r-environment-setup-and-running-analyses)
+
 This repository contains the complete analysis framework used to characterize multi‑omic signatures across co-occurring conditions in [Human Trisome Project](https://www.trisome.org/) participants with and without Down syndrome (DS).  
 It includes:
 
@@ -46,7 +52,7 @@ Script names indicate the comparison being performed:
 * **`<Dataset>_<T21/D21>_BMI`**
 	Analysis of BMI vs. dataset features in individuals with (T21) or without (D21) Down syndrome.
 
-## Data Availability
+## Data Sources
 Human Trisome Project (HTP) datasets used in this study can be obtained from the associated Synapse repository:
 * [Sample metadata and Co-occurring conditions](https://doi.org/10.7303/syn31488784)
 * [Whole-blood bulk RNA-seq](https://doi.org/10.7303/syn31488780)
