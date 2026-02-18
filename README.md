@@ -9,7 +9,7 @@ Code and data-processing workflows supporting the manuscript:
 * [Data Sources](#data-sources)
 * [Software & Dependencies](#software--dependencies)
 * [R Environment Setup and Running Analyses](#r-environment-setup-and-running-analyses)
-* [Citation](#citation--license)
+* [Citation & License](#citation--license)
 
 This repository contains the complete analysis framework used to characterize multi‑omic signatures across co-occurring conditions in [Human Trisome Project](https://www.trisome.org/) participants with and without Down syndrome (DS).  
 It includes:
