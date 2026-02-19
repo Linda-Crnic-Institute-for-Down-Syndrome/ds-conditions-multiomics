@@ -107,6 +107,7 @@ htp_cooccurring_data <- htp_cooccurring_data_file %>%
   inner_join(meta_data) %>% 
   distinct() %>% 
   mutate( # Set factor orders
+    Sample_source_code = as_factor(Sample_source_code), # convert to factor - default is numerical order
     Sex = fct_relevel(Sex, "Female"),
     Karyotype = fct_relevel(Karyotype, "Control")
   )

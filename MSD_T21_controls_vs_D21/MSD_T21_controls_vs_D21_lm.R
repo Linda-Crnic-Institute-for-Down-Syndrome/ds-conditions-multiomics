@@ -53,6 +53,9 @@ library("skimr") # data table summaries
 library("rstatix") # for outlier detection 
 library("limma")  # linear modeling for high-dimensional omics data
 library("broom") # extract tidy model results
+library("ggplot2") # to create plots
+library("ggrepel") # required for labelling features
+library("ggforce") # required for zooming and sina
 library("conflicted") # force all conflicts to become errors
 conflicts_prefer( # declare preferences in cases of conflict
   dplyr::filter,
@@ -86,21 +89,25 @@ source(here("helper_functions.R")) # load helper functions
 meta_data <- htp_meta_data_file %>% 
   read_tsv() %>% 
   filter(Event_name != "Current") %>%  
-  rename(Age = Age_at_visit) %>% 
   mutate( # Set factor orders
+    Sample_source_code = as_factor(Sample_source_code), # convert to factor - default is numerical order
     Sex = fct_relevel(Sex, "Female"),
     Karyotype = fct_relevel(Karyotype, "Control")
-  )
+  ) %>% 
+  select(-c("Data_contact", "Date_exported", "Script"))
 #
 
 ## 1.2 Read in and inspect HTP co-occurring conditions data ----
 htp_cooccurring_data <- htp_cooccurring_data_file %>% 
   read_tsv() %>% 
-  pivot_longer(cols = -c(RecordID:MRAbstractionStatus), names_to = "condition", values_to = "has_cond") %>% 
+  rename(condition = Condition,
+         has_cond = History_of_condition) %>% 
   mutate(has_cond = as_factor(has_cond)) %>% 
-  filter(Event_name != "Current") %>% 
-  rename(Age = Age_at_visit) %>% 
+  select(-c("Data_contact", "Date_exported", "Script")) %>% 
+  inner_join(meta_data) %>% 
+  distinct() %>% 
   mutate( # Set factor orders
+    Sample_source_code = as_factor(Sample_source_code), # convert to factor - default is numerical order
     Sex = fct_relevel(Sex, "Female"),
     Karyotype = fct_relevel(Karyotype, "Control")
   )
@@ -197,9 +204,9 @@ for (cond in conditions$condition) {
   # Step 1: filter data for this condition
   lm_data_final.tmp <- regression_prep_dat_final %>%
     filter(condition == cond) %>%
-    select(LabID, RecordID, Age, Sex, Sample_source, Karyotype, Analyte,
+    select(LabID, Age, Sex, Sample_source_code, Karyotype, Analyte,
            analyte_conc = value, log2_analyte_conc, condition) %>%
-    nest(data = c(LabID, RecordID, Age, Sex, Sample_source, Karyotype, analyte_conc, log2_analyte_conc))
+    nest(data = c(LabID, Age, Sex, Sample_source_code, Karyotype, analyte_conc, log2_analyte_conc))
   
   if (nrow(lm_data_final.tmp) == 0) {
     cat("No data for condition:", cond, "- skipping\n")
@@ -209,7 +216,7 @@ for (cond in conditions$condition) {
   # Step 1.5: check categorical variable levels
   dat_check <- lm_data_final.tmp$data[[1]]
   
-  vars_to_check <- c("Karyotype", "Sex", "Sample_source")
+  vars_to_check <- c("Karyotype", "Sex", "Sample_source_code")
   invalid_vars <- vars_to_check[sapply(vars_to_check, function(v) nlevels(factor(dat_check[[v]])) < 2)]
   
   if (length(invalid_vars) > 0) {
@@ -220,7 +227,7 @@ for (cond in conditions$condition) {
   # Step 2: fit model if all factors have >=2 levels
   regressions_multi_analyte_AgeSexSource.tmp <- lm_data_final.tmp %>%
     mutate(
-      fit = map(data, ~ lm(log2_analyte_conc ~ Karyotype + Age + Sex + Sample_source, data = .x)),
+      fit = map(data, ~ lm(log2_analyte_conc ~ Karyotype + Age + Sex + Sample_source_code, data = .x)),
       tidied = map(fit, broom::tidy),
       glanced = map(fit, broom::glance),
       augmented = map(fit, broom::augment),
@@ -269,7 +276,6 @@ all_cond_analytes_lm_data_final_results %>%
 # Using Obesity as an example here
 v_plot <- all_cond_analytes_lm_data_final_results %>%
   filter(condition == "Obesity") %>% # change to any other condition(s)
-  mutate(condition = fct_relevel(condition, top_conds)) %>% 
   volcano_plot_lab_lm(
     title="Diff. abundance of MSD cytokines in Obesity (T21 controls vs. D21) - linear regression",
     subtitle = paste0( "AgeSexSource adjusted model\n[Down: ",(.) %>% filter(BHadj_pval < 0.1 & FoldChange <1) %>% nrow(),
@@ -308,10 +314,10 @@ msd_source_vec <- msd_unadj_data %>% # get batch information, ensuring order mat
   colnames() %>%
   enframe(name = NULL, value = "LabID") %>%
   inner_join(
-    meta_data %>% select(LabID, Sample_source)
+    meta_data %>% select(LabID, Sample_source_code)
   ) %>%
   #distinct() %>%
-  pull(Sample_source)
+  pull(Sample_source_code)
 msd_design <- msd_unadj_data %>% # get batch information, ensuring order matches unadj_data
   colnames() %>%
   enframe(name = NULL, value = "LabID") %>%
