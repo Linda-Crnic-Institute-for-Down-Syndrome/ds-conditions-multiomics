@@ -33,23 +33,20 @@
 
 
 # 0 General Setup -----
-## initialize renv
-# renv::init(bioconductor = TRUE) # run first time only
-
+## Initialize renv ----
+#renv::init(bioconductor = TRUE) # for first time only 
+#
+# To install the exact versions of all R packages but requires matching R version
+# renv::restore()
 
 ## 0.1 Load required libraries ----
-library("readxl") # Used to read .xlsx files
-library("openxlsx") # used for data export as Excel workbooks
 library("tidyverse") # data manipulation, visualization, and tidy workflows
-library("patchwork") # for assembling plot layouts
-library("skimr") # data table summaries
-library("janitor") # data cleaning and other functions
+library("broom") # for tidying models
 library("tictoc") # timer
-library("lmerTest") # required to get pvals for mixed model with broom.mixed::tidy()
-library("broom.mixed") # for tidying models
-library("conflicted") # force all conflicts to become errors
 library("ggplot2") #data visualization
 library("ggforce") # required for zooming and sina
+library("rstatix") # required for statistical tests
+library("conflicted") # force all conflicts to become errors
 conflicts_prefer( # declare preferences in cases of conflict
   dplyr::filter,
   dplyr::count,

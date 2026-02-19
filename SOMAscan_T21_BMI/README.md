@@ -29,7 +29,7 @@ SOMAscan_T21_BMI/
 
 The R packages used in this analysis can be run on any standard computer with enough RAM to support the operations.
 
-This analysis was originally run on a system with 36 GB RAM running MacOS 14.1 and R version 4.3.2.
+This analysis was originally run on a system with 36 GB RAM running MacOS 14.3 and R version 4.3.2.
 
 The `renv` package can be used to manage the R environment.
 
